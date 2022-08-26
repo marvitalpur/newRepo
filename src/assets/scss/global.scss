@@ -1,0 +1,222 @@
+@import "./variables.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  // This defines what 1rem is
+  font-size: 80%; //1 rem = 10px; 10px/16px = 62.5%
+  body {
+    font-family: $theme-font-primary;
+    font-size: 16px;
+    color: $theme-color-dark;
+    background: $theme-color-light;
+
+    // END
+
+    h1 {
+      font-family: $theme-font-bold;
+      font-size: 3rem;
+      color: $theme-color-dark;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -o-hyphens: auto;
+      hyphens: auto;
+    }
+  
+  
+    h2 {
+      font-family: $theme-font-bold;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $theme-color-dark;
+    }
+  
+    h3 {
+      font-family: $theme-font-bold;
+      font-size: 1.5rem;
+      color: $theme-color-dark;
+    }
+  
+    h4 {
+      font-family: $theme-font-bold;
+      font-size: 1.2rem;
+      color: $theme-color-dark;
+    }
+  
+    h5 {
+      font-family: $theme-font-bold;
+      font-size: 1rem;
+      color: $theme-color-dark;
+    }
+  
+    h6 {
+      font-family: $theme-font-bold;
+      font-size: 0.8rem;
+      color: $theme-color-dark;
+    }
+  
+
+    a {
+      color: $theme-color-dark  !important;
+      text-decoration: none !important;
+    }
+
+    .wrapper {
+      width: 100%;
+
+      // SIDE BAR
+      & .sidebar {
+        width: 20rem;
+        height: 100vh;
+        background: $theme-color-primary;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        position: fixed;
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+        padding-inline-end: 1rem;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 7px 0px 15px #00000029;
+        overflow: hidden;
+
+        a {
+          color: $theme-color-light  !important;
+          text-decoration: none !important;
+          text-transform: capitalize;
+        }
+
+        &.sidebar_show {
+          margin-left: 0 !important;
+        }
+
+        .sidebar-header {
+          padding: 0.5rem;
+          border-bottom: 1px solid $theme-color-dark;
+        }
+
+        .sidebar__header__icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 4rem;
+        }
+
+        .sidebar__body {
+          margin-top: 3rem;
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+          margin-left: 2rem;
+
+          .sidebar__title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background-color: '#000';
+
+            h3 {
+              width: 90%;
+              color: $theme-color-light;
+              text-transform: capitalize;
+              padding-top: 1rem;
+              padding-left: 1rem;
+            }
+          }
+
+          .sidebar__body__item {
+            margin-top: 1.5rem;
+
+            ul {
+              list-style: none;
+              padding: 10;
+              margin: 0;
+
+              a {
+                display: block;
+                padding-left: 1.5rem;
+                color: $theme-color-light;
+                font-size: 1.2rem;
+                font-weight: 300;
+                margin-top: 2.2rem;
+                text-decoration: none;
+                text-transform: capitalize;
+                transition: all 0.3s ease-in-out;
+
+                li {
+                  display: flex;
+                  align-items: center;
+                  text-transform: capitalize;
+
+                  svg {
+                    vertical-align: unset !important;
+                    margin-right: 1rem;
+                    font-size: 2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & .main {
+        // background: $theme-color-primary;
+        // opacity: 0.15;
+        padding-top: 0rem;
+        margin-left: 24rem;
+        margin-right: 4rem;
+        border-radius: 25px;
+
+
+        & .header {
+          .search_bar_wrapper {
+            position: relative !important;
+            display: flex;
+            .search-input {
+              background: linear-gradient(to right, #fff4f7, #fafafa) !important;
+              color: #a4a3a3;
+              border-radius: 0.5rem;
+              height: 3.5rem;
+              padding: 0 2rem;
+              font-size: 1.3rem;
+              font-weight: 700;
+              text-transform: capitalize;
+              border: 0;
+              font-family: $theme-font-bold;
+              box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+              width: 97%;
+            }
+          }
+        }
+        & .home{
+        
+          .dashboard_card {
+            background: $theme-color-primary;
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: 0.5rem 0.5rem 1.5rem #00000029;
+            display: block;
+            text-align: center;
+            .dashboard_card_body{
+            
+      
+
+
+              
+            }
+           
+        }
+
+      }
+    }
+
+
+
+    }
+  }
+}

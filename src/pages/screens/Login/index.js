@@ -8,7 +8,7 @@ function Login() {
     <>
    <div className='login' 
    style={{backgroundImage: `url(${Images.Bg})`}} >
-    <img src={Images.logo}/>
+    <img src={Images.logo}  class/>
 
    </div>
     </>

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Images from "../../constant";
 // import { logout } from "../../app/auth";
 
-export default function Header(props) {
+export default function Header({headertext}) {
   // const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -14,8 +14,8 @@ export default function Header(props) {
   return (
     <>
       <header className="header mt-3">
-        <div className="container-fluid">
-          <div className="d-flex bd-highlight">
+        <div className="container-fluid row col-12">
+          <div className="d-flex bd-highlight col-11">
             <div className="flex-grow-1 bd-highlight">
               {/* <div className="d-sm-none toggle_wrapper">
                 <button
@@ -29,12 +29,13 @@ export default function Header(props) {
                 </button>
               </div> */}
               <div className="search_bar_wrapper d-none d-sm-flex ">
-               <h1>Deshboard</h1>
+               <h1>{headertext}</h1>
            
               </div>
             </div>
             </div>
-            <div className="px-1 bd-highlight">
+            <div className="px-1 bd-highlight row col ">
+            <div className="px-1 bd-highlight col ">
               <Button
                 variant="light"
                 className="notification_button"
@@ -48,10 +49,12 @@ export default function Header(props) {
                   <div className="notification_body"></div>
                 </div>
               </Button>
-            </div>
-            <div className="px-1 bd-highlight">
+              </div>
+              <div className="px-1 bd-highlight col">
               <img src={Images.user}/>
             </div>
+            </div>
+        
           </div>
       
       </header>

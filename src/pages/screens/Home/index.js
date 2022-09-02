@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../../components/header";
 import Images from "../../../constant";
 
 // import { Container } from './styles';
@@ -59,10 +60,10 @@ const Home = () => {
       img1:Images.checkCart,
       img2:Images.checkUser
     },
-    
   ]
   return (
     <div className="container-fluid  ">
+      <Header headertext={"Dashboard"} />
       <div className="row col-12 text-center">
         {data.map((data, index) => {
           return (

@@ -5,12 +5,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Navigation from "../navigation/Navigate";
+import FeatureDeals from "./screens/Featured_Deals";
 
 // import { Container } from './styles';
 const App = () => {
   return (
     <>
-    {/* <Sidebar/> */}
+
+    
+     {/* <Sidebar/>  */}
         <ToastContainer
           theme="dark"
           position="bottom-right"
